@@ -1,8 +1,16 @@
+
+## Welcome to the SFFF: San Francisco Food Finder
+
+Play with the Live preview [here](https://sfff-seven.vercel.app/)
+
+## Getting Started On Your Local Machine
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
-
-First, run the development server:
+First, install the dependencies
+```bash
+npm i
+```
+then run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +24,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## What's Implemented
 
-## Learn More
+This project is implemented using the latest version of nextjs using App Router
 
-To learn more about Next.js, take a look at the following resources:
+1. An API call retrieves an parses all the csv data about the food trucks
+2. Data is shared between reusable react components for displaying things like the map & th filters
+3. Components share also function references in order to comunicate each other to make the filters work.
+4. Google Maps API are havily used here.
+5. tailwindcss is used for easy styling.
+6. Typescript is used across all the application.
+7. Project has an automatic deploy pipeline on push to master to Vercel PaaS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
